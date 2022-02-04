@@ -65,6 +65,9 @@ setlocal
   call:portCheck %1 remove
   REM add a dummy var because this function also serves to check for existence before adding it, as well
   call:driverCheck "removeonly" %2 remove %3 %4
+
+  REM delete the queue
+  cscript /Nologo %adminScripts%\prnmngr.vbs -d -p %1
 endlocal
 EXIT /B 0
 
