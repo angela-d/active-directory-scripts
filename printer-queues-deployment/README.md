@@ -34,7 +34,7 @@ C:\WINDOWS\system32\Printing_Admin_Scripts
 ## Get Your Driver Info
 - I use Papercut as my print server
 - It assumes the user logs on using their Active Directory account, which is synced to Papercut
-  - Unique queues are not taken into consideration; the logged on user is what "prints"
+  - Unique non-directory Papercut accounts are not necessarily taken into consideration; the logged on user (Windows) is what "prints" - ie. the print owner is assumed to be in Papercut, already
 - At the time of writing, all clients are on 21H1
 
 We do not use Print Deploy from Papercut, as we require advanced features of the printer drivers, which are not included in Papercut's implementations, yet.
